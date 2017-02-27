@@ -54,7 +54,7 @@ Interestingly, this pattern holds true for many other types of work. Essentially
 Let's look at a similar example that is optimized in Ember, starting with a `User` object:
 
 ```javascript
-var User = Ember.Object.extend({
+let User = Ember.Object.extend({
   firstName: null,
   lastName: null,
   fullName: Ember.computed('firstName', 'lastName', function() {
@@ -73,7 +73,7 @@ and a template to display its attributes:
 If we execute the following code without the run loop:
 
 ```javascript
-var user = User.create({ firstName: 'Tom', lastName: 'Huda' });
+let user = User.create({ firstName: 'Tom', lastName: 'Huda' });
 user.set('firstName', 'Yehuda');
 // {{firstName}} and {{fullName}} are updated
 
@@ -86,7 +86,7 @@ We see that the browser will rerender the template twice.
 However, if we have the run loop in the above code, the browser will only rerender the template once the attributes have all been set.
 
 ```javascript
-var user = User.create({ firstName: 'Tom', lastName: 'Huda' });
+let user = User.create({ firstName: 'Tom', lastName: 'Huda' });
 user.set('firstName', 'Yehuda');
 user.set('lastName', 'Katz');
 user.set('firstName', 'Tom');
