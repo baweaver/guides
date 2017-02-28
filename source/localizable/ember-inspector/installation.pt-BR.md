@@ -60,7 +60,7 @@ Se você estiver usando um navegador diferente do Chrome ou Firefox, você pode 
 
 Adicione o seguinte bookmark:
 
-[Bookmark Me](javascript: (function() { var s = document.createElement('script'); s.src = '//ember-extension.s3.amazonaws.com/dist_bookmarklet/load_inspector.js'; document.body.appendChild(s); }());)
+[Bookmark Me](javascript: (function() { let s = document.createElement('script'); s.src = '//ember-extension.s3.amazonaws.com/dist_bookmarklet/load_inspector.js'; document.body.appendChild(s); }());)
 
 Para abrir o Ember Inspector, clique sobre o novo bookmark. Safari bloqueia pop-ups por padrão, então você precisará habilitar pop-ups antes de usar o bookmarklet.
 

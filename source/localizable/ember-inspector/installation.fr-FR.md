@@ -60,7 +60,7 @@ If you are using a browser other than Chrome or Firefox, you can use the bookmar
 
 Add the following bookmark:
 
-[Bookmark Me](javascript: (function() { var s = document.createElement('script'); s.src = '//ember-extension.s3.amazonaws.com/dist_bookmarklet/load_inspector.js'; document.body.appendChild(s); }());)
+[Bookmark Me](javascript: (function() { let s = document.createElement('script'); s.src = '//ember-extension.s3.amazonaws.com/dist_bookmarklet/load_inspector.js'; document.body.appendChild(s); }());)
 
 To open the Inspector, click on the new bookmark. Safari blocks popups by default, so you'll need to enable popups before using the bookmarklet.
 
