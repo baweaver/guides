@@ -74,7 +74,7 @@ bookmarklet option to use the Inspector.
 
 Add the following bookmark:
 
-<a href="javascript: (function() { var s = document.createElement('script'); s.src = '//ember-extension.s3.amazonaws.com/dist_bookmarklet/load_inspector.js'; document.body.appendChild(s); }());">Bookmark Me</a>
+<a href="javascript: (function() { let s = document.createElement('script'); s.src = '//ember-extension.s3.amazonaws.com/dist_bookmarklet/load_inspector.js'; document.body.appendChild(s); }());">Bookmark Me</a>
 
 To open the Inspector, click on the new bookmark. Safari blocks popups by default, so you'll need to enable popups before using the bookmarklet.
 
