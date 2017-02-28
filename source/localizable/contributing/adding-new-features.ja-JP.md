@@ -50,7 +50,7 @@ if (Ember.FEATURES.isEnabled("feature")) {
     
     ```config/environment.js
     module.exports = function(environment) {
-      let ENV = {
+      var ENV = {
         EmberENV: {
           FEATURES: {
             htmlbars: true

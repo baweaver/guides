@@ -43,7 +43,7 @@ Additionally, if you try to set the model of an `Ember.ArrayController` to a pla
 You can manually coerce a native array into an array that implements the required interfaces using the convenience method `Ember.A`:
 
 ```javascript
-let islands = ['Oahu', 'Kauai'];
+var islands = ['Oahu', 'Kauai'];
 islands.includes('Oahu');
 //=> TypeError: Object Oahu,Kauai has no method 'includes'
 

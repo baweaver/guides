@@ -213,10 +213,10 @@ Once in the vendor directory, the script can be built into the app. We just need
 
 <pre><code class="ember-cli-build.js{+22}">/*jshint node:true*/
 /* global require, module */
-let EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  let app = new EmberApp(defaults, {
+  var app = new EmberApp(defaults, {
     // Add options here
   });
 

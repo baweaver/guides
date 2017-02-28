@@ -30,7 +30,7 @@ You can also expose properties to the console. When you hover over an object's p
 You can send Ember objects and arrays to the Inspector by using `EmberInspector.inspect` within the console.
 
 ```javascript
-let object = Ember.Object.create();
+var object = Ember.Object.create();
 EmberInspector.inspect(object);
 ```
 

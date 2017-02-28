@@ -35,8 +35,8 @@ export default Ember.Controller.extend({ queryParams: ['category'], category: nu
       category: null,
     
       filteredArticles: Ember.computed('category', 'model', function() {
-        let category = this.get('category');
-        let articles = this.get('model');
+        var category = this.get('category');
+        var articles = this.get('model');
     
         if (category) {
           return articles.filterBy('category', category);
